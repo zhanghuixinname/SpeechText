@@ -7,6 +7,7 @@ Pod::Spec.new do |s|
   s.author           = { 'xiaojiuwo' => '294408407@qq.com' }
   s.source           = { :git => 'https://github.com/zhanghuixinname/SpeechText.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'  # 更新部署目标
+  s.swift_versions = ['5.0']  # 根据你的实际 Swift 版本填写
   s.source_files = 'SpeechText/Classes/**/*.{swift,h,m}'
   s.public_header_files = 'SpeechText/Classes/STSocketTool.h'  # 明确公开的头文件
  
