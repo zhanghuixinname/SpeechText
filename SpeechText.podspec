@@ -11,5 +11,5 @@ Pod::Spec.new do |s|
   s.public_header_files = 'SpeechTextS/Classes/STSocketTool.h'  # 明确公开的头文件
  
   s.dependency 'SocketRocket'
-  s.dependency 'Alamofire'
+  s.dependency 'AFNetworking'
 end
