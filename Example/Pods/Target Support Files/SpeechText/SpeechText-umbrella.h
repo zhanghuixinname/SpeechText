@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "STSocketTool.h"
 
 FOUNDATION_EXPORT double SpeechTextVersionNumber;
 FOUNDATION_EXPORT const unsigned char SpeechTextVersionString[];

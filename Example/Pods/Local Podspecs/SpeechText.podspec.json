@@ -1,9 +1,8 @@
 {
   "name": "SpeechText",
   "version": "0.1.0",
-  "summary": "A short description of SpeechText.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/xiaojiuwo/SpeechText",
+  "summary": "A lightweight library for speech-to-text and text-to-speech functionality.",
+  "homepage": "https://github.com/zhanghuixinname/SpeechText",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +11,21 @@
     "xiaojiuwo": "294408407@qq.com"
   },
   "source": {
-    "git": "https://github.com/xiaojiuwo/SpeechText.git",
+    "git": "https://github.com/zhanghuixinname/SpeechText.git",
     "tag": "0.1.0"
   },
+  "static_framework": true,
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "SpeechText/Classes/**/*"
+  "swift_versions": [
+    "5.0"
+  ],
+  "source_files": "SpeechText/Classes/**/*.{swift,h,m}",
+  "public_header_files": "SpeechText/Classes/STSocketTool.h",
+  "dependencies": {
+    "SocketRocket": [],
+    "AFNetworking": []
+  },
+  "swift_version": "5.0"
 }

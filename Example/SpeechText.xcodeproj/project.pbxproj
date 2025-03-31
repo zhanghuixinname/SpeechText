@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2A2EA1ED2D9A2DB500507072 /* STSocketTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EA1EC2D9A2DB500507072 /* STSocketTool.m */; };
+		2A2EA1F22D9A8FBE00507072 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EA1F12D9A8FBE00507072 /* UIColor+Hex.m */; };
+		2A2EA1F32D9A8FBE00507072 /* SD_RecordHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EA1EF2D9A8FBE00507072 /* SD_RecordHelper.m */; };
+		2A2EA1F52D9A8FFF00507072 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A2EA1F42D9A8FFF00507072 /* AVFoundation.framework */; };
 		3BB9EB076236383D47FF6473 /* Pods_SpeechText_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C393F0917CD5ED6D37A9521 /* Pods_SpeechText_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -43,6 +46,11 @@
 		2842B5422A444D849FAE4AF8 /* Pods-SpeechText_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechText_Example.debug.xcconfig"; path = "Target Support Files/Pods-SpeechText_Example/Pods-SpeechText_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2A2EA1EB2D9A2DB500507072 /* STSocketTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STSocketTool.h; sourceTree = "<group>"; };
 		2A2EA1EC2D9A2DB500507072 /* STSocketTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STSocketTool.m; sourceTree = "<group>"; };
+		2A2EA1EE2D9A8FBE00507072 /* SD_RecordHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SD_RecordHelper.h; sourceTree = "<group>"; };
+		2A2EA1EF2D9A8FBE00507072 /* SD_RecordHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SD_RecordHelper.m; sourceTree = "<group>"; };
+		2A2EA1F02D9A8FBE00507072 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		2A2EA1F12D9A8FBE00507072 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		2A2EA1F42D9A8FFF00507072 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4C393F0917CD5ED6D37A9521 /* Pods_SpeechText_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpeechText_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* SpeechText_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechText_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A2EA1F52D9A8FFF00507072 /* AVFoundation.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -133,6 +142,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A2EA1F42D9A8FFF00507072 /* AVFoundation.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -146,6 +156,10 @@
 		6003F593195388D20070C39A /* Example for SpeechText */ = {
 			isa = PBXGroup;
 			children = (
+				2A2EA1EE2D9A8FBE00507072 /* SD_RecordHelper.h */,
+				2A2EA1EF2D9A8FBE00507072 /* SD_RecordHelper.m */,
+				2A2EA1F02D9A8FBE00507072 /* UIColor+Hex.h */,
+				2A2EA1F12D9A8FBE00507072 /* UIColor+Hex.m */,
 				6003F59C195388D20070C39A /* STAppDelegate.h */,
 				6003F59D195388D20070C39A /* STAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -333,17 +347,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SpeechText_Tests/Pods-SpeechText_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Expecta/Expecta.framework",
-				"${BUILT_PRODUCTS_DIR}/Expecta+Snapshots/Expecta_Snapshots.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-				"${BUILT_PRODUCTS_DIR}/Specta/Specta.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Expecta_Snapshots.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Specta.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -379,11 +389,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-SpeechText_Example/Pods-SpeechText_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SpeechText/SpeechText.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SocketRocket/SocketRocket.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SpeechText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketRocket.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -399,6 +411,8 @@
 			files = (
 				6003F59E195388D20070C39A /* STAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* STViewController.m in Sources */,
+				2A2EA1F22D9A8FBE00507072 /* UIColor+Hex.m in Sources */,
+				2A2EA1F32D9A8FBE00507072 /* SD_RecordHelper.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				2A2EA1ED2D9A2DB500507072 /* STSocketTool.m in Sources */,
 			);
