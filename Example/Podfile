@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'SpeechText_Example' do
+  pod 'SpeechText', :path => '../'
+
+  target 'SpeechText_Tests' do
+    inherit! :search_paths
+
+    pod 'Specta'
+    pod 'Expecta'
+    pod 'FBSnapshotTestCase'
+    pod 'Expecta+Snapshots'
+  end
+end

@@ -1,0 +1,22 @@
+{
+  "name": "SpeechText",
+  "version": "0.1.0",
+  "summary": "A short description of SpeechText.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/xiaojiuwo/SpeechText",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xiaojiuwo": "294408407@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/xiaojiuwo/SpeechText.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "SpeechText/Classes/**/*"
+}
