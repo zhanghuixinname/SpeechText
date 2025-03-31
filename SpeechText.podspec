@@ -6,10 +6,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xiaojiuwo' => '294408407@qq.com' }
   s.source           = { :git => 'https://github.com/zhanghuixinname/SpeechText.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '9.0'  # 更新部署目标
-  s.source_files = 'SpeechTextS/Classes/**/*'
-  s.public_header_files = 'SpeechTextS/Classes/STSocketTool.h'  # 明确公开的头文件
+  s.ios.deployment_target = '12.0'  # 更新部署目标
+  s.source_files = 'SpeechText/Classes/**/*.{swift,h,m}'
+  s.public_header_files = 'SpeechText/Classes/STSocketTool.h'  # 明确公开的头文件
  
   s.dependency 'SocketRocket'
-  s.dependency 'AFNetworking'
+  s.dependency 'Alamofire'
 end
