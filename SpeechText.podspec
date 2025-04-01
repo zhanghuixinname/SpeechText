@@ -19,9 +19,11 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     'ARCHS[sdk=iphoneos*]' => 'arm64',
     'ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64',
-    'VALID_ARCHS' => 'arm64 x86_64',
     'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s i386',
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s'
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s',
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0',
+    'SUPPORTS_MACCATALYST' => 'NO',
+    'SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD' => 'NO'
   }
 
   
