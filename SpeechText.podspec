@@ -12,6 +12,8 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5.0']  # 根据你的实际 Swift 版本填写
   s.source_files = 'SpeechText/Classes/**/*.{swift,h,m}'
   s.public_header_files = 'SpeechText/Classes/STSocketTool.h'  # 明确公开的头文件
+s.private_header_files = 'SpeechText/Classes/Internal/**/*.h'
+  s.header_mappings_dir = 'SpeechText/Classes'
  
   s.dependency 'SocketRocket'
   s.dependency 'AFNetworking'
