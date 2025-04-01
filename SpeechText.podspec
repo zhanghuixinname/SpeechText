@@ -15,6 +15,16 @@ Pod::Spec.new do |s|
 s.private_header_files = 'SpeechText/Classes/Internal/**/*.h'
   s.header_mappings_dir = 'SpeechText/Classes'
  
-  s.dependency 'SocketRocket'
-  s.dependency 'AFNetworking'
+
+s.pod_target_xcconfig = {
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',  # 模拟器不需要 arm64
+  'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s'   # 真机移除 armv7/armv7s
+}
+s.user_target_xcconfig = {
+  'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
+  'EXCLUDED_ARCHS[sdk=iphoneos*]' => 'armv7 armv7s'
+}
+
+  s.dependency 'AFNetworking', '~> 4.0'  # 确保使用最新版（支持 iOS 12+）
+s.dependency 'SocketRocket', '~> 0.7.0'  # 检查是否有更新版本
 end
