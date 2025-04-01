@@ -6,6 +6,13 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'xiaojiuwo' => '294408407@qq.com' }
   s.source           = { :git => 'https://github.com/zhanghuixinname/SpeechText.git', :tag => s.version.to_s }
+ # 添加以下配置
+  s.platform     = :ios, "12.0"
+  s.pod_target_xcconfig = {
+    'ARCHS' => 'arm64',
+    'VALID_ARCHS' => 'arm64',
+    'IPHONEOS_DEPLOYMENT_TARGET' => '12.0'
+  }
 
   s.static_framework = true  # 设置为静态 Framework
   s.ios.deployment_target = '12.0'  # 更新部署目标
